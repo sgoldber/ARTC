@@ -1,13 +1,4 @@
-#import bottlenose
-#from bs4 import BeautifulSoup
 
-#amazon = bottlenose.Amazon("AKIAJ3WAM6HGDFCM25JA", "iTFej3U91rYiZ9aonL6IiYPkgwF0tCgARYSuJ5pd", "smgoldberg-20", Parser=lambda text: BeautifulSoup(text, 'xml'))
-#results = amazon.ItemLookup(ItemId="B0072FRFTU", ResponseGroup="Reviews", IdType="ASIN")
-
-#print(results.find('IFrameURL').string)
-
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 # Written as part of https://www.scrapehero.com/how-to-scrape-amazon-product-reviews-using-python/		
 from lxml import html  
 import json
@@ -16,9 +7,6 @@ import json,re
 from dateutil import parser as dateparser
 from time import sleep
 
-#access_key = "AKIAJ3WAM6HGDFCM25JA"
-#secret_key = "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"
-#associate_tag = "smgoldberg-20"
 
 def FindAllReviews(asin):
 	amazon_url  = 'http://www.amazon.com/dp/'+asin
