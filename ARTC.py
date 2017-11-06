@@ -7,7 +7,6 @@ import json,re
 from dateutil import parser as dateparser
 from time import sleep
 
-
 def FindAllReviews(asin):
 	amazon_url  = 'http://www.amazon.com/dp/'+asin
 	headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}

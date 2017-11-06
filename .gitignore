@@ -102,3 +102,4 @@ ENV/
 
 *.png
 *.json
+*.py.old
